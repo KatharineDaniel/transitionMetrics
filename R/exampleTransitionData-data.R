@@ -4,6 +4,7 @@
 #' Example of transition data for 100 participants, with 10 different binary time series,
 #' and 50 observations of each series
 #'
+#' @name exampleTransitionData
 #'
 #' @docType data
 #'

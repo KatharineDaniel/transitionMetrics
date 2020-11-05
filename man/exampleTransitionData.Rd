@@ -16,6 +16,5 @@ and 50 observations of each series
 }
 \examples{
 data(exampleTransitionData)
-
 }
 \keyword{datasets}
