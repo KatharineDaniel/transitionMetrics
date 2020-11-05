@@ -17,12 +17,12 @@
 #' myArray <- buildTransArray(x, W=5)
 #'
 #' #get transition metrics
-#' results <- trans_stats(myArray)
+#' results <- transStats(myArray)
 #'
 #' @export
 
 
-trans_stats <- function(x){
+transStats <- function(x){
   if (class(x)!="transArray"){
     stop("x must be of class transArray. See buildTransArray().")
   }
