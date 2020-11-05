@@ -16,8 +16,6 @@
 #' #calculate transition array for example data with a window size of 5
 #' myArray <- buildTransArray(x, W=5)
 #'
-#' #get transition metrics
-#' results <- trans_stats(myArray)
 #' @export
 
 buildTransArray <- function(x,W=5){

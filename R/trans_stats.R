@@ -10,8 +10,14 @@
 #' * \code{spread}: spread value
 #' * \code{symmetry}: symmetry value
 #' @examples
+#' #load in example data
+#' x <- data(exampleTransitionData)
 #'
-#' FIX
+#' #calculate transition array for example data with a window size of 5
+#' myArray <- buildTransArray(x, W=5)
+#'
+#' #get transition metrics
+#' results <- trans_stats(myArray)
 #'
 #' @export
 
