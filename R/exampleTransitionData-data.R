@@ -1,9 +1,9 @@
-#' Arabidopsis QTL data on gravitropism
+#' Example transition data set
 #'
-#' Data from a QTL experiment on gravitropism in
-#' Arabidopsis, with data on 162 recombinant inbred lines (Ler x
-#' Cvi). The outcome is the root tip angle (in degrees) at two-minute
-#' increments over eight hours.
+#'
+#' Example of transition data for 100 participants, with 10 different binary time series,
+#' and 50 observations of each series
+#'
 #'
 #' @docType data
 #'
@@ -13,4 +13,6 @@
 #'
 #' @examples
 #' data(exampleTransitionData)
+#'
+#' @export
 "exampleTransitionData"
