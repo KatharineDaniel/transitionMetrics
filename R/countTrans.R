@@ -1,4 +1,4 @@
-#' Creates a transition array from raw time series data
+#' Counts transitions between raw time series data
 #'
 #'
 #'
