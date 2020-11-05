@@ -25,9 +25,9 @@ Builds a transition array between raw time series data
 }
 \examples{
 #load in example data
-x <- data(exampleTransitionData)
+data(exampleTransitionData)
 
 #calculate transition array for example data with a window size of 5
-myArray <- buildTransArray(x, W=5)
+myArray <- buildTransArray(x=exampleTransitionData, W=5)
 
 }
