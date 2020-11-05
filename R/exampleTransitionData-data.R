@@ -13,6 +13,4 @@
 #'
 #' @examples
 #' data(exampleTransitionData)
-#'
-#' @export
 "exampleTransitionData"
