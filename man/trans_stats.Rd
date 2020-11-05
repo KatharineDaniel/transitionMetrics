@@ -23,7 +23,13 @@ A data frame with the following columns:
 Calculate stability, spread, and symmetry metrics for all transition matrices within a transition array
 }
 \examples{
+#load in example data
+x <- data(exampleTransitionData)
 
-FIX
+#calculate transition array for example data with a window size of 5
+myArray <- buildTransArray(x, W=5)
+
+#get transition metrics
+results <- trans_stats(myArray)
 
 }

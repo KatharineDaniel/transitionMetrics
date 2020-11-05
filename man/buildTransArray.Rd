@@ -24,7 +24,10 @@ An object of class "transArray". An array of transition matrices with the follow
 Builds a transition array between raw time series data
 }
 \examples{
+#load in example data
+x <- data(exampleTransitionData)
 
-FIX
+#calculate transition array for example data with a window size of 5
+myArray <- buildTransArray(x, W=5)
 
 }

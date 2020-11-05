@@ -2,4 +2,5 @@
 
 export(buildTransArray)
 export(countTrans)
+export(exampleTransitionData)
 export(trans_stats)
