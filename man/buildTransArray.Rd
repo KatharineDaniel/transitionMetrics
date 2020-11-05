@@ -12,7 +12,7 @@ buildTransArray(x, W = 5)
 \item{W}{A hyperparameter denoting the number of observations to include in a single transition matrix.}
 }
 \value{
-An array of transition matrices with the following dimensions:
+An object of class "transArray". An array of transition matrices with the following dimensions:
 \itemize{
 \item dimension 1: participant
 \item dimension 2: first time series
