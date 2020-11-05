@@ -9,6 +9,7 @@
 #'  x <- c(1,1,1,1,1)
 #'  y <- c(0,0,1,0,1)
 #'  countTrans(x, y)
+#' @export
 
 countTrans <- function(x, y){
   tCount <- 0

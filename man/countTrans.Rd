@@ -2,7 +2,7 @@
 % Please edit documentation in R/countTrans.R
 \name{countTrans}
 \alias{countTrans}
-\title{Creates a transition array from raw time series data}
+\title{Counts transitions between raw time series data}
 \usage{
 countTrans(x, y)
 }
@@ -15,7 +15,7 @@ countTrans(x, y)
 The number of times \code{y} is observed immediately after observing \code{x}
 }
 \description{
-Creates a transition array from raw time series data
+Counts transitions between raw time series data
 }
 \examples{
  x <- c(1,1,1,1,1)

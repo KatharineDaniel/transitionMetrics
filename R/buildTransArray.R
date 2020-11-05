@@ -4,7 +4,7 @@
 #'
 #' @param x A data set of binary time series to be included in a transition matrix.
 #' @param W A hyperparameter denoting the number of observations to include in a single transition matrix.
-#' @return An array of transition matrices with the following dimensions:
+#' @return An object of class "transArray". An array of transition matrices with the following dimensions:
 #' * dimension 1: participant
 #' * dimension 2: first time series
 #' * dimension 3: second time series
@@ -13,11 +13,11 @@
 #'
 #' FIX
 #'
+#' @export
 
-
-buildTransArray <- function(x,W=5){   #input data in long format where first column is ID column, which gets stored into myDataMatrix object
-  myDataMatrix <- x[,-1]              #removes participant ID from matrix
-  N <- length(unique(x[,1]))          #N is the number of unique participants
+buildTransArray <- function(x,W=5){
+  myDataMatrix <- x[,-1]
+  N <- length(unique(x[,1]))
   IDs <- unique(x[,1])
   numVars<- ncol(myDataMatrix)
   numObs <- nrow(myDataMatrix)/N
@@ -36,6 +36,7 @@ buildTransArray <- function(x,W=5){   #input data in long format where first col
       }
     }
   }
+  class(myTransArray) <- "transArray"
   return(myTransArray)
 }
 
