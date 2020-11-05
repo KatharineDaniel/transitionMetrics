@@ -1,15 +1,20 @@
 Package: transitionMetrics
-Title: What the Package Does (One Line, Title Case)
+Title: R Package to Calculate Characteristics of Transitions in Multivariate Binary Time Series Data
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Katharine",
+           family = "Daniel",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           email = "ked4fd@virginia.edu",
+           comment = c(ORCID = "0000-0002-4371-2740")),
+    person(given = "Robert",
+           family = "Moulder",
+           role = "ctb",
+           email = "rgm4fd@virginia.edu",
+           comment = c(ORCID = "0000-0001-7504-9560"))
+           
 Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
