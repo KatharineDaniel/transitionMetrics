@@ -2,7 +2,7 @@ Package: transitionMetrics
 Title: R Package to Calculate Characteristics of Transitions in Multivariate Binary Time Series Data
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Katharine",
+    c(person(given = "Katharine",
            family = "Daniel",
            role = c("aut", "cre"),
            email = "ked4fd@virginia.edu",
@@ -11,8 +11,7 @@ Authors@R:
            family = "Moulder",
            role = "ctb",
            email = "rgm4fd@virginia.edu",
-           comment = c(ORCID = "0000-0001-7504-9560"))
-           
+           comment = c(ORCID = "0000-0001-7504-9560")))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
