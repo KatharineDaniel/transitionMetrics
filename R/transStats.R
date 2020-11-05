@@ -11,10 +11,10 @@
 #' * \code{symmetry}: symmetry value
 #' @examples
 #' #load in example data
-#' x <- data(exampleTransitionData)
+#' data(exampleTransitionData)
 #'
 #' #calculate transition array for example data with a window size of 5
-#' myArray <- buildTransArray(x, W=5)
+#' myArray <- buildTransArray(exampleTransitionData, W=5)
 #'
 #' #get transition metrics
 #' results <- transStats(myArray)
