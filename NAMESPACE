@@ -3,3 +3,6 @@
 export(buildTransArray)
 export(countTrans)
 export(transStats)
+import(Matrix)
+import(stats)
+import(utils)
