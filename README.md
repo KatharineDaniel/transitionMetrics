@@ -50,6 +50,7 @@ must be in a similar format.
 
 ``` r
 library(transitionMetrics)
+library(Matrix)
 data(exampleTransitionData)
 ```
 
