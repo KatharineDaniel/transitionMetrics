@@ -9,6 +9,7 @@
 #' * dimension 2: first time series
 #' * dimension 3: second time series
 #' * dimension 4: transition matrix
+#' @import utils
 #' @examples
 #' #load in example data
 #' data(exampleTransitionData)
@@ -30,6 +31,7 @@ buildTransArray <- function(x,W=5){
                         dimnames=list(IDs, paste("to", vars, sep = "_"), paste("from", vars, sep = "_"),
                                      paste("Window", 1:(numObs-W+1), sep="")))
  colnames(myDataMatrix) <- vars
+ pb <- utils::txtProgressBar(min = 0, max = N, style = 3)
   for(i in 1:N){
     myDataArray[i,,] <- as.matrix(myDataMatrix[which(x[,1]==IDs[i]),])
     for(j in 1:numVars){
@@ -39,7 +41,9 @@ buildTransArray <- function(x,W=5){
         }
       }
     }
+    utils::setTxtProgressBar(pb, i)
   }
+ close(pb)
   class(myTransArray) <- "transArray"
   return(myTransArray)
 }
