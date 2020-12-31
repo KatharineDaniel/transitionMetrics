@@ -24,6 +24,7 @@ Calculate stability, spread, and symmetry metrics for all transition matrices wi
 }
 \examples{
 #load in example data
+library(Matrix)
 data(exampleTransitionData)
 
 #calculate transition array for example data with a window size of 5
