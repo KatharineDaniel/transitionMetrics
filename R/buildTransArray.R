@@ -28,9 +28,10 @@ buildTransArray <- function(x,W=5){
   myDataArray <- array(NA, dim=c(N, numObs,numVars), dimnames=list(IDs, paste("Obs", 1:numObs, sep=""),vars))
   myTransArray <- array(NA, dim=c(N, numVars, numVars, (numObs-W+1)),
                         dimnames=list(IDs, paste("to", vars, sep = "_"), paste("from", vars, sep = "_"),
-                                      paste("Window", 1:(numObs-W+1), sep="")))
+                                     paste("Window", 1:(numObs-W+1), sep="")))
+ colnames(myDataMatrix) <- vars
   for(i in 1:N){
-    myDataArray[i,,] <- myDataMatrix[which(x[,1]==IDs[i]),]
+    myDataArray[i,,] <- as.matrix(myDataMatrix[which(x[,1]==IDs[i]),])
     for(j in 1:numVars){
       for(k in 1:numVars){
         for(l in 1:(numObs-W+1)){
